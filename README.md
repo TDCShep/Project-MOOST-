@@ -43,7 +43,7 @@ To-do list:
 Project is: _In Progress_
 
 ## Inspiration
-Add here credits. Project inspired by Jason Fox's book 'Battle Scars' in which he talks about his battle with mental health and his journey learning to manage it.
+Project inspired by Jason Fox's book 'Battle Scars' in which he talks about his battle with mental health and his journey learning to manage it.
 
 ## Contact
-Created by [@TSCShep] - feel free to contact me!
+Created by [@TDCShep] - feel free to contact me!
