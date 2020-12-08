@@ -16,12 +16,12 @@ const moost = {
     //Vote of Confidence
     _votesOfConf: [
         {
-        quote: 'You can do this',
-        source: 'Me'
+        quote: 'Either you run the day or the day runs you.',
+        source: 'Jim Rohn'
         },
         {
-        quote: 'Have you failed yet?',
-        source: 'Who'
+        quote: 'The more you feed your mind with positive thoughts, the more you can attract great things into your life.',
+        source: 'Roy T. Bennett'
         }        
     ],
     
@@ -48,7 +48,7 @@ const moost = {
     _activitySuggestion: [
         {
         activity: 'Go for a run.',
-        scientificBacking: 'Releases positive endorphins and adrenaline.'
+        scientificBacking: 'Exercise produces endorphins and enhances the production of serotonin. Both of these chemicals help with improving your mood.'
         }
     ],
 
@@ -65,7 +65,7 @@ const moost = {
     },
 
     //Rhetorical Question
-    _rhetoricalQ: ['What is the worst that can happen?'],
+    _rhetoricalQ: ['What is the worst that can happen if you did and what is the best?'],
 
     get rhetoricalQ () {
         return this._rhetoricalQ;
@@ -89,8 +89,18 @@ const moost = {
 
 };
 
-//Initiation Sequences
+//Add Votes of Confidence
+//moost.addVoteOfConf()
 
+//Add MOOST Activity
+//moost.addActivity()
+
+//Add Rhetorical Questions
+//moost.addRhetoricalQ()
+
+
+//Initiation Sequences
+moost.generateMOOST();
 
 
 
@@ -120,11 +130,11 @@ console.log(moost.activitySuggestion);
 moost.addRhetoricalQ('If the worst happens, will it still matter in a year?');
 console.log(moost.rhetoricalQ);
 */
-///*
+/*
 //Test 4: Rhetorical Question Function
 moost.addRhetoricalQ('Who even cares???!')
 console.log(moost.rhetoricalQ);
-//*/
+*/
 /*
 //Test 5: GenerateMoost Function
 console.log(moost.generateMOOST());
