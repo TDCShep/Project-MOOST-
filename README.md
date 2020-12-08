@@ -5,7 +5,6 @@ Moost is a simple random message generator designed to randomly generate suggest
 ## Table of contents
 
 * [General info](#general-info)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
@@ -18,10 +17,6 @@ Moost is a simple random message generator designed to randomly generate suggest
 As part of my 100 Days of Code challenge I have been tasked with creating a 'Mixed Messages' generator by the Codecadamy school and was allowed to take the project in a direction of my choosing.
 In the midst of this pandemic, and the ensuing lockdowns, mental health in the UK is at an all time low and when you feel yourself in a mental slump you can not always think of ways to pick your mood back up. MOOST is a simple Mood Boosting tool to randomly suggest an activity to pull you out of your mental slump. It comprises of 3 parts: An inspirational quote, a suggest mood boosting activity with scientific backing and finally a rhetorical question.
 
-## Screenshots
-
-![Example screenshot](./img/screenshot.png)
-
 ## Technologies
 
 * VS Code - Version: 1.51.1
@@ -30,32 +25,29 @@ In the midst of this pandemic, and the ensuing lockdowns, mental health in the U
 
 ## Setup
 
-Describe how to install / setup your local environement / add link to demo version.
+Users must have node installed on their device in order to run MOOST.
 
 ## Code Examples
 
-Show examples of usage:
-`put-your-code-here`
+    generateMOOST: function () {
+        const voteOfConf = this.randomise(this._votesOfConf);
+        const activitySuggestion = this.randomise(this._activitySuggestion);
+        const rhetoricalQ = this.randomise(this._rhetoricalQ);
+
+        console.log(voteOfConf.quote + ' - ' + voteOfConf.source);
+        console.log(activitySuggestion.activity);
+        console.log(activitySuggestion.scientificBacking);
+        console.log(rhetoricalQ);
 
 ## Features
 
-List of features ready and TODOs for future development
-
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
-
-To-do list:
-
-* Wow improvement to be done 1
+* An inspiration quote that gives the reader a vote of confidence.
+* A suggested activity proven to help to boost people's mood.
+* A final question to challenge people quick to dismiss the activity without trying it.
 
 ## Status
 
-Project is: _In Progress_
-
-## Inspiration
-
-Project inspired by Jason Fox's book 'Battle Scars' in which he talks about his battle with mental health and his journey learning to manage it.
+Project is: _Complete_
 
 ## Contact
 
