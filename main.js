@@ -90,7 +90,20 @@ const moost = {
 };
 
 //Add Votes of Confidence
-//moost.addVoteOfConf()
+//moost.addVoteOfConf( , )
+moost.addVoteOfConf('Do not let what you cannot do interfere with what you can do.', 'John Wooden')
+moost.addVoteOfConf('Although the world is full of suffering, it is also full of the overcoming of it.', 'Helen Keller')
+moost.addVoteOfConf('Life isn’t about waiting for the storm to pass, it’s about learning how to dance in the rain.', 'Unknown')
+moost.addVoteOfConf('A positive attitude gives you power over your circumstances instead of your circumstances having power over you.', ' Joyce Meyer')
+moost.addVoteOfConf('Experience is not what happens to you, it is what you do with what happens to you.' , 'Aldous Huxley' )
+moost.addVoteOfConf('Do what you can, with what you have, where you are.', 'Theodore Roosevelt')
+moost.addVoteOfConf('Life is tough, but so are you', 'Unknown')
+moost.addVoteOfConf('Every day is a fresh start', 'Unknown')
+moost.addVoteOfConf('Trust yourself! You can do more than you think', 'Unknown')
+moost.addVoteOfConf('Don’t count the days, make the days count', 'Muhammad Ali')
+moost.addVoteOfConf('Have faith. Better days are ahead.', 'Unknown')
+moost.addVoteOfConf('Soon, when all is well, you will look back on this period of our life and be glad you never gave up.' )
+
 
 //Add MOOST Activity
 //moost.addActivity()
