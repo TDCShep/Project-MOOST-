@@ -4,30 +4,30 @@ console.log("MOOST!");
 //Moost Object
 const moost = {
 
-//Random Number Generator Helper Function
-const randomise = (array) => {
-    const randomIndex = Math.floor(Math.random() * array.length);
-    return array[randomIndex];
-};
+    //Random Number Generator Helper Function
+    randomise: function (array) {
+        const randomIndex = Math.floor(Math.random() * array.length);
+        return array[randomIndex];
+    },
 
 
 
 
-//Vote of Confidence
-const voteOfConf = [];
-
-
-
-
-
-
-//Activity Suggestion Object + Scientific Backing
+    //Vote of Confidence
+    voteOfConf: []
 
 
 
 
 
-//Rhetorical Question
+
+    //Activity Suggestion Object + Scientific Backing
+
+
+
+
+
+    //Rhetorical Question
 
 
 
@@ -46,6 +46,6 @@ const voteOfConf = [];
 /*
 //Test 1: Randomiser Function
 const testArray = ['one', 'two', 'three', 'four', 'five'];
-const randomiseFunctionTest = randomise(testArray);
+const randomiseFunctionTest = moost.randomise(testArray);
 console.log(randomiseFunctionTest);
 */
