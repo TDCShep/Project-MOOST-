@@ -58,7 +58,17 @@ const moost = {
     },
 
     //Rhetorical Question
-    
+    _rhetoricalQ: ['What is the worst that can happen?'],
+
+    get rhetoricalQ () {
+        return this._rhetoricalQ;
+    },
+
+    addRhetoricalQ (question) {
+        let newQuestion = question;
+        return this._rhetoricalQ.push(newQuestion);
+    }
+   
 
 
 };
@@ -88,4 +98,9 @@ moost.addVoteOfConf('quote', 'me');
 //Test 3: Activity Function
 moost.addActivity('Force yourself to smile for 2 minutes solid.', 'The act of smiling releases endorphins that can help to pick up your mood.');
 console.log(moost._activitySuggestion);
+*/
+/*
+//Test 4: Rhetorical Question Function
+moost.addRhetoricalQ('If the worst happens, will it still matter in a year?');
+console.log(moost._rhetoricalQ);
 */
