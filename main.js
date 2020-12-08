@@ -1,7 +1,8 @@
 //Title
 console.log("MOOST!");
 
-
+//Moost Object
+const moost = {
 
 //Random Number Generator Helper Function
 const randomise = (array) => {
@@ -13,6 +14,8 @@ const randomise = (array) => {
 
 
 //Vote of Confidence
+const voteOfConf = [];
+
 
 
 
@@ -28,6 +31,7 @@ const randomise = (array) => {
 
 
 
+};
 
 //Initiation Sequences
 
