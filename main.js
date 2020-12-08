@@ -14,12 +14,13 @@ const moost = {
 
 
     //Vote of Confidence
-    voteOfConf: []
-
-
-
-
-
+    _votesOfConf: [
+        {
+        Quote: ' ',
+        Source: ' '
+        },
+    ],
+    
 
     //Activity Suggestion Object + Scientific Backing
 
