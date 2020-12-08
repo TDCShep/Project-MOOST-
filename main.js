@@ -16,11 +16,26 @@ const moost = {
     //Vote of Confidence
     _votesOfConf: [
         {
-        Quote: ' ',
-        Source: ' '
-        },
+        quote: 'You can do this',
+        source: 'Me'
+        }
     ],
     
+    get votesOfConf(){
+        return this._votesOfConf;
+    },
+
+/*
+    addVoteOfConf (quote, source) {
+        let voteOfConf = {
+             quote: quote,
+             source: source
+            },           
+
+    
+        this._votesOfConf.push(voteOfConf);
+    }
+*/
 
     //Activity Suggestion Object + Scientific Backing
 
@@ -50,3 +65,7 @@ const testArray = ['one', 'two', 'three', 'four', 'five'];
 const randomiseFunctionTest = moost.randomise(testArray);
 console.log(randomiseFunctionTest);
 */
+///*
+// Test 2: Votes of Confidence Object
+//console.log(moost.votesOfConf)
+moost.addVoteOfConf('quote', 'me');
