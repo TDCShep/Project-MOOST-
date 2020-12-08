@@ -38,7 +38,12 @@ const moost = {
 */
 
     //Activity Suggestion Object + Scientific Backing
-
+    _activitySuggestion:[
+        {
+        activity: 'Go for a run.',
+        scientificBacking: 'Releases positive endorphins and adrenaline.'
+        }
+    ],
 
 
 
