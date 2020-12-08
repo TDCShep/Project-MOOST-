@@ -18,7 +18,11 @@ const moost = {
         {
         quote: 'You can do this',
         source: 'Me'
-        }
+        },
+        {
+        quote: 'Have you failed yet?',
+        source: 'Who'
+        }        
     ],
     
     get votesOfConf(){
@@ -35,12 +39,11 @@ const moost = {
     
         this._votesOfConf.push(voteOfConf);
     },
-
-    randomVoteSelector () {
-        
+/*
+    getRandomElement: function () {
+        const 
     },
-
-
+*/
     //Activity Suggestion Object + Scientific Backing
     _activitySuggestion: [
         {
@@ -71,9 +74,18 @@ const moost = {
     addRhetoricalQ (question) {
         let newQuestion = question;
         return this._rhetoricalQ.push(newQuestion);
-    }
+    },
    
+    generateMOOST: function () {
+        const voteOfConf = this.randomise(this._votesOfConf);
+        const activitySuggestion = this.randomise(this._activitySuggestion);
+        const rhetoricalQ = this.randomise(this._rhetoricalQ);
 
+        console.log(voteOfConf.quote + ' - ' + voteOfConf.source);
+        console.log(activitySuggestion.activity);
+        console.log(activitySuggestion.scientificBacking);
+        console.log(rhetoricalQ);
+    }
 
 };
 
@@ -95,16 +107,25 @@ console.log(randomiseFunctionTest);
 */
 /*
 // Test 2: Votes of Confidence Object
-//console.log(moost.votesOfConf)
 moost.addVoteOfConf('quote', 'me');
+console.log(moost.votesOfConf)
 */
 /*
 //Test 3: Activity Function
 moost.addActivity('Force yourself to smile for 2 minutes solid.', 'The act of smiling releases endorphins that can help to pick up your mood.');
-console.log(moost._activitySuggestion);
+console.log(moost.activitySuggestion);
 */
 /*
 //Test 4: Rhetorical Question Function
 moost.addRhetoricalQ('If the worst happens, will it still matter in a year?');
-console.log(moost._rhetoricalQ);
+console.log(moost.rhetoricalQ);
+*/
+///*
+//Test 4: Rhetorical Question Function
+moost.addRhetoricalQ('Who even cares???!')
+console.log(moost.rhetoricalQ);
+//*/
+/*
+//Test 5: GenerateMoost Function
+console.log(moost.generateMOOST());
 */
