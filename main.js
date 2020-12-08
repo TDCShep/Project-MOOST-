@@ -25,28 +25,37 @@ const moost = {
         return this._votesOfConf;
     },
 
-/*
+
     addVoteOfConf (quote, source) {
         let voteOfConf = {
              quote: quote,
              source: source
-            },           
+            };          
 
     
         this._votesOfConf.push(voteOfConf);
-    }
-*/
+    },
+
 
     //Activity Suggestion Object + Scientific Backing
-    _activitySuggestion:[
+    _activitySuggestion: [
         {
         activity: 'Go for a run.',
         scientificBacking: 'Releases positive endorphins and adrenaline.'
         }
     ],
 
+    get activitySuggestion () {
+        return this._activitySuggestion;
+    },
 
-
+    addActivity (activity, science) {
+        let newActivity = {
+            activity: activity,
+            scientificBacking: science
+        };
+        return this._activitySuggestion.push(newActivity);
+    }
 
     //Rhetorical Question
 
