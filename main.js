@@ -55,10 +55,10 @@ const moost = {
             scientificBacking: science
         };
         return this._activitySuggestion.push(newActivity);
-    }
+    },
 
     //Rhetorical Question
-
+    
 
 
 };
@@ -79,7 +79,13 @@ const testArray = ['one', 'two', 'three', 'four', 'five'];
 const randomiseFunctionTest = moost.randomise(testArray);
 console.log(randomiseFunctionTest);
 */
-///*
+/*
 // Test 2: Votes of Confidence Object
 //console.log(moost.votesOfConf)
 moost.addVoteOfConf('quote', 'me');
+*/
+/*
+//Test 3: Activity Function
+moost.addActivity('Force yourself to smile for 2 minutes solid.', 'The act of smiling releases endorphins that can help to pick up your mood.');
+console.log(moost._activitySuggestion);
+*/
