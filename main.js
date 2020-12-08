@@ -36,6 +36,10 @@ const moost = {
         this._votesOfConf.push(voteOfConf);
     },
 
+    randomVoteSelector () {
+        
+    },
+
 
     //Activity Suggestion Object + Scientific Backing
     _activitySuggestion: [
